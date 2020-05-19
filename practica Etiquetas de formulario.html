@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tienda ABC</title>
+</head>
+<body>
+	<form accept-charset="utf-8">
+		<fieldset>
+			<legend>Registro</legend>
+			<p>
+			 <label name="Nombre" for="nombre" > Nombre<b>*</b><br/>
+			 <input type="text" name="nombre" placeholder="Adam Bowen" required></label>
+			</p>
+			<p>
+			<p>
+			 <label name="Email" for="email" > Email<b>*</b><br/>
+			 <input type="email" name="email" placeholder="adambowen@miemail.com" required></label>
+			</p>
+			<p>
+			<p>
+			 <label name="Edad" for="edad" > Edad<b>*</b><br/>
+			 <input type="number" name="edad" placeholder="Ejemplo 27" min="15" max="120" step="1"></label>
+			</p>
+			<p>
+			<label>Genero<br/></label>
+			<input type="radio" id="genero" name="genero" value="F">
+			<label for="genero">Femenino</label>
+			<input type="radio" id="genero" name="genero" value="M">
+			<label for="genero">Masculino</label>
+			<input type="radio" id="genero" name="genero" value="NB">
+			<label for="genero">No Binario</label>		
+			</p>
+			<p>
+			 <label name="canal" for="canal">Recomendado por<b>*</b><br/></label><select name="canal" required>
+			 	<option value="">Seleccione</option>
+			 	<option value="Google">Google</option>
+			 	<option value="Amigo">Amigo</option>
+			 	<option value="RRSS">Redes Sociales</option>
+			 	<option value="other">Otros</option>
+			 </select>
+			</p>
+			<p>
+			 <label name="Comentario" for="comentario" >Comentarios<b>*</b><br/>
+			 <textarea name="comentario" cols="50" rows="5" placeholder="ingrese aqui sus sugerencias"></textarea></label>
+			</p>
+			<p>
+				<input type="checkbox" name="terminos" value="yes" required>
+				<label for="terminos">Acepto los terminos y condiciones del sitio<b>*</b></label>
+			</p>
+			<p>
+				<b>*</b> El campo es requerido
+			</p>
+			<p>
+			 <label name="Enviar" for="enviar">Enviar Formulario<br/>
+			 	<input type="submit" name="enviar" value="Continuar"></label>
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>

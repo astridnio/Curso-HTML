@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Libro</title>
+</head>
+<body>
+	<form accept-charset="utf-8">
+		<fieldset>
+			<legend>Registro</legend>
+			<p>
+			 <label name="Nombre" for="nombre" > Nombre<b>*</b><br/>
+			 <input type="text" name="nombre" placeholder="Adam Bowen" required></label>
+			</p>
+			<p>
+			 <label name="Tipo" for="tipo">Tipo<b>*</b><br/></label><select name="tipo" required>
+			 	<option value="Musico">Musico</option>
+			 	<option value="Pintor">Pintor</option>
+			 	<option value="Actor">Actor</option>
+			 </select>
+			</p>
+			<p>
+			 <label name="Comentario" for="comentario" >Comentarios<b>*</b><br/>
+			 <textarea name="comentario" cols="50" rows="5" placeholder="ingrese aqui sus sugerencias" required></textarea></label>
+			</p>
+			<p>
+			<label>Disponibilidad<br/></label>
+			<input type="radio" id="disponibilidad" name="disponibilidad" value="De lunes a viernes">
+			<label for="disponibilidad">De lunes a viernes</label>
+			<input type="radio" id="disponibilidad" name="disponibilidad" value="Fin de semana">
+			<label for="disponibilidad">Fin de semana</label>	
+			</p>
+			<p>
+				<input type="checkbox" name="terminos" value="yes" required>
+				<label for="terminos">Acepto los terminos y condiciones del sitio<b>*</b></label>
+			</p>
+			<p>
+				<b>*</b> El campo es requerido
+			</p>
+			<p>
+			 <label name="Enviar" for="enviar">Enviar Formulario<br/>
+			 	<input type="submit" name="enviar" value="Continuar"></label>
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>

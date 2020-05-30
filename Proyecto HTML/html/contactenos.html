@@ -3,20 +3,48 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Llamado a bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--Nombre a la pestaña de la pagina-->
     <title>TuServicio.com</title>
 </head>
-<header>  
-   <h1><img src="media/img/logo.svg" alt="Logo" title="TuServicio.com" width="40px"> TuServicio.com</h1>
-   <h2>Te reparamos el computador</h2>
-   <nav>
-       <ul>
-           <li>Inicio</li>
-           <li>Servicios</li>
-           <li>Contáctenos</li>
-           <li>Inicio de Sesión</li>
-           <li>Registro</li>
-       </ul>
-   </nav>
+<header>
+    <!--Encabezado de la pagina-->
+    <div class="container-fluid bg-info">
+    <!--Titulo y Logo-->
+     <h1 class="display-2 text-white" ><img src="../media/img/logo.svg" alt="Logo" title="TuServicio.com" width="40px"> TuServicio.com</h1>
+     <!--Slogan-->
+     <h2 class="text-white">Te reparamos el computador</h2>
+     <!--nav bar-->
+        <nav>
+            <ul>
+                <li class="text-white lead"><a href="../index.html" class="text-white">Inicio</a></li>
+                <li class="text-white lead"><a href="servicios.html" class="text-white">Servicios</a></li>
+                <li class="text-white lead">Contáctenos</li>
+                <li class="text-white lead"><a href="login.html" class="text-white">Inicio de Sesión</a></li>
+                <li class="text-white lead"><a href="registro.html" class="text-white">Registro</a></li>
+             </ul>
+        </nav>
+        <br>
+    </div>
 </header>
+
+<main>
+    <!--Cuerpo de la pagina-->
+    <div class="container-fluid">
+    <!--Titulo de la seccion-->
+    <h1 class="display-4">Contáctenos</h1>
+    <!--Definicion de la direccion separada por saltos de linea-->
+    <address><strong>TuServicio.com</strong><br>12855 NE 6th Ave<br>North Miami<br>Florida<br>Zip Code: 33161<br><a href="mailto:info@tuservicio.com?subject=Contact%20US">info@tuservicio.com</a></address>
+    <!--Definicion del iframe para mostrar la direccion incrustada-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.2676461902834!2d-80.18742848565738!3d25.8935706094508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b201af262d69%3A0xc24beb077567050a!2s12855%20NE%206th%20Ave%2C%20North%20Miami%2C%20FL%2033161%2C%20EE.%20UU.!5e0!3m2!1ses!2sco!4v1590775986095!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</main>
+<footer>
+    <!--Pie de pagina-->
+    <div class="container-fluid bg-info text-light">
+        <!--leyenda en el pie de pagina-->
+        <p></br>Derechos Reservados</br></br></p>
+    </div>
+</footer>
 </html>

@@ -34,7 +34,63 @@
     <div class="container-fluid">
     <!--Titulo de la seccion-->
     <h1 class="display-4">Registro</h1>
-    <!--Definicion de la tabla con borde y clases de bootstrap-->
+    <!--Definicion de formulario con metodo post y clases de bootstrap-->
+    <form accept-charset="utf-8"  method="post" class="was-validated">
+        <fieldset>
+            <!--Nombre del formulario-->
+            <legend>Nuevo Usuario</legend>
+            <!--Campo de email-->
+            <div class="form-group col-md-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email<b>*</b></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Email" required>
+                    <div class="invalid-feedback">Por favor ingrese su correo electronico</div>
+                </div>
+            </div>
+            <!--Campo de contraseña-->
+            <div class="form-group col-md-4">
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Contraseña<b>*</b></label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña"
+                        required>
+                    <div class="invalid-feedback">Por favor ingrese su contraseña</div>
+                </div>
+            </div>
+            <!--Campo de confirmacion de contraseña-->
+            <div class="form-group col-md-4">
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Contraseña (Confirmación)<b>*</b></label>
+                    <input type="password" class="form-control" id="confirmacion" placeholder="Confirme su contraseña"
+                        required>
+                    <div class="invalid-feedback">Por favor confirme su contraseña</div>
+                </div>
+            </div>
+            <!--Campo de select para referidos-->
+            <div class="form-group col-md-4">
+            <label class="mb-3" for="inlineFormCustomSelectPref">Dónde escuchaste de nosotros?</label>
+                <select class="custom-select" required id="inlineFormCustomSelectPref">
+                    <option value="">Seleccionar</option>
+                    <option value="1">Google</option>
+                    <option value="2">Otro</option>
+                </select>
+                <div class="invalid-feedback">Por favor seleccione una opcion</div>
+            </div>  
+            <!--Caja para comentarios-->
+            <div class="form-group col-md-9">
+                <label for="validationTextarea">Comentarios<b>*</b></label>
+                <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Ingrese su comentario aqui" required></textarea>
+              </div> 
+            <!--Caja para terminos y condiciones-->
+            <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                <label class="custom-control-label" for="customControlValidation1">Acepta los terminos y condiciones<b>*</b></label>
+                <div class="invalid-feedback">Por favor Acepte los terminos y condiciones</div>
+            </div>             
+            <button type="submit" class="btn btn-info">Continuar</button>
+            <p></p>
+        </fieldset>
+    </form>
     </div>
 </main>
 <footer>

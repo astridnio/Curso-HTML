@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Llamado a bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--Nombre a la pestaña de la pagina-->
     <title>TuServicio.com</title>
 </head>
 <header>
     <!--Encabezado de la pagina-->
     <div class="container-fluid bg-info">
-    <!--Titulo y Logo-->
-     <h1 class="display-2 text-white" ><img src="../media/img/logo.svg" alt="Logo" title="TuServicio.com" width="40px"> TuServicio.com</h1>
-     <!--Slogan-->
-     <h2 class="text-white">Te reparamos el computador</h2>
-     <!--nav bar-->
+        <!--Titulo y Logo-->
+        <h1 class="display-2 text-white"><img src="../media/img/logo.svg" alt="Logo" title="TuServicio.com"
+                width="40px"> TuServicio.com</h1>
+        <!--Slogan-->
+        <h2 class="text-white">Te reparamos el computador</h2>
+        <!--nav bar-->
         <nav>
             <ul>
                 <li class="text-white lead"><a href="../index.html" class="text-white">Inicio</a></li>
@@ -23,7 +26,7 @@
                 <li class="text-white lead"><a href="contactenos.html" class="text-white">Contáctenos</a></li>
                 <li class="text-white lead">Inicio de Sesión</li>
                 <li class="text-white lead"><a href="registro.html" class="text-white">Registro</a></li>
-             </ul>
+            </ul>
         </nav>
         <br>
     </div>
@@ -32,28 +35,38 @@
 <main>
     <!--Cuerpo de la pagina-->
     <div class="container-fluid">
-    <!--Titulo de la seccion-->
-    <h1 class="display-4">Inicio de Sesión</h1>
-    <!--Definicion de la tabla con borde y clases de bootstrap-->
-    <form accept-charset="utf-8">
-        <fieldset>
-            <legend>Credenciales</legend>
-            <div class="form-group">
-            <label for="exampleInputEmail1">Email*</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-            <label for="exampleInputPassword1">Constraseña*</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
-            </div>
-            <button type="submit" class="btn btn-info">Submit</button>
-            <p></p>
-        </fieldset>
-    </form>
+        <!--Titulo de la seccion-->
+        <h1 class="display-4">Inicio de Sesión</h1>
+        <!--Crea el formulario-->
+        <form accept-charset="utf-8" method="post">
+            <fieldset>
+                <!--Nombre del formulario-->
+                <legend>Credenciales</legend>
+                <!--Campo de email-->
+                <div class="form-group col-md-4">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email*</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Email" required>
+                    </div>
+                </div>
+                <!--Campo de contraseña-->
+                <div class="form-group col-md-4">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Contraseña*</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña"
+                            required>
+                    </div>
+                </div>
+                <!--Caja para mantener logueado-->
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                </div>
+                <button type="submit" class="btn btn-info">Enviar</button>
+                <p></p>
+            </fieldset>
+        </form>
 </main>
 <footer>
     <!--Pie de pagina-->
@@ -62,4 +75,5 @@
         <p></br>Derechos Reservados</br></br></p>
     </div>
 </footer>
+
 </html>
